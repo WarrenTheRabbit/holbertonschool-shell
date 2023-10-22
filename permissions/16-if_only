@@ -1,4 +1,2 @@
 #!/bin/bash
-owner=$(ls -l hello | awk '{print $3}')
-if [ $owner == 'guillaume' ]; then
-	chown vincent hello
+chown --from=guillaume: vincent: hello
