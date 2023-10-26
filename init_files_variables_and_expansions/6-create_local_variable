@@ -1,0 +1,8 @@
+#!/bin/bash
+function demo_function {
+    local BEST="School"
+    echo "Inside function: $BEST"
+}
+
+demo_function
+echo "Outside function: $BEST"  # This will not display the value of BEST since it's local
